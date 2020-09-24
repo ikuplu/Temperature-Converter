@@ -31,15 +31,36 @@ input[type=number] {
   border: 0;
 }
 
-:::-webkit-input-placeholder { /* chrome/opera/safari */
-  color: #222222;
+::-webkit-input-placeholder { /* chrome/opera/safari */
+  color: #555555;
+  /* background: yellow; */
 }
 
 ::-moz-placeholder { /* firefox */
-  color: #222222;
+  color: #555555;
 }
 
 ::-ms-input-placeholder { /* edge */
-  color: #222222;
+  color: #555555;
 }
+
+@media (max-width: 768px) {
+  input[type=number] {
+    font-size: 5em;
+  }
+
+  ::-webkit-input-placeholder { /* chrome/opera/safari */
+    font-size: 0.9em;
+  }
+  
+  ::-moz-placeholder { /* firefox */
+    font-size: 0.9em;
+  }
+  
+  ::-ms-input-placeholder { /* edge */
+    font-size: 0.9em;
+  }
+  
+}
+
 
